@@ -1,0 +1,207 @@
+<html>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #666;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    line-height: 1.2;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Sidebar Styles */
+aside {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    width: 20%;
+    float: left;
+    height: 100vh;
+}
+
+/* Main Content Styles */
+main {
+    margin-left: 20%;
+    padding: 20px;
+}
+
+/* Dashboard Styles */
+#dashboard {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Pipeline Styles */
+#pipelines {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Runs Styles */
+#runs {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Resources Styles */
+#resources {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Tasks Styles */
+#tasks {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Cluster Tasks Styles */
+#clustertasks {
+    background-color: #f2f2f2;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Namespace Styles */
+#namespace {
+    background-color: #e0e0e0;
+    color: #333;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#"><i class="fa fa-arrow-left"></i></a></li>
+                <li><a href="#"><i class="fa fa-arrow-right"></i></a></li>
+                <li><a href="#"><i class="fa fa-code"></i></a></li>
+                <li><a href="#"><i class="fa fa-project-diagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-security"></i></a></li>
+                <li><a href="#"><i class="fa fa-cog"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#"><i class="fa fa-bars"></i></a></li>
+            <li><a href="#"><h3>Tekton Dashboard</h3></a></li>
+        </ul>
+    </nav>
+    <aside>
+        <h3>Tekton 资源</h3>
+        <ul>
+            <li><a href="#"><h4>Pipelines</h4></a></li>
+            <li><a href="#"><h4>Runs</h4></a></li>
+            <li><a href="#"><h4>Resources</h4></a></li>
+            <li><a href="#"><h4>Tasks</h4></a></li>
+            <li><a href="#"><h4>ClusterTasks</h4></a></li>
+        </ul>
+    </aside>
+    <main>
+        <section id="pipelines">
+            <h1>Pipelines</h1>
+            <div class="pipelineRuns">
+                <div class="pipelineRun">
+                    <h2>PipelineRuns</h2>
+                    <p>输入一个格式为 label:key:label:value 的标签过滤器</p>
+                    <input type="text" placeholder="输入一个格式为 label:key:label:value 的标签过滤器">
+                </div>
+                <div class="pipelineResources">
+                    <h2>PipelineResources</h2>
+                    <p>输入一个格式为 label:key:label:value 的资源过滤器</p>
+                    <input type="text" placeholder="输入一个格式为 label:key:label:value 的资源过滤器">
+                </div>
+                <div class="pipelineTasks">
+                    <h2>PipelineTasks</h2>
+                    <p>输入一个格式为 label:key:label:value 的任务过滤器</p>
+                    <input type="text" placeholder="输入一个格式为 label:key:label:value 的任务过滤器">
+                </div>
+                <div class="clustertasks">
+                    <h2>Clustertasks</h2>
+                    <p>输入一个格式为 label:key:label:value 的集群任务过滤器</p>
+                    <input type="text" placeholder="输入一个格式为 label:key:label:value 的集群任务过滤器">
+                </div>
+            </div>
+        </section>
+        <section id="runs">
+            <h1>Runs</h1>
+            <div class="namespace">
+                <h2>Namespace</h2>
+                <p>输入一个格式为 label:key:label:value 的命名空间过滤器</p>
+                <input type="text" placeholder="输入一个格式为 label:key:label:value 的命名空间过滤器">
+            </div>
+        </section>
+        <section id="resources">
+            <h1>Resources</h1>
+            <div class="namespace">
+                <h2>Namespace</h2>
+                <p>输入一个格式为 label:key:label:value 的命名空间过滤器</p>
+                <input type="text" placeholder="输入一个格式为 label:key:label:value 的命名空间过滤器">
+            </div>
+        </section>
+        <section id="tasks">
+            <h1>Tasks</h1>
+            <div class="namespace">
+                <h2>Namespace</h2>
+                <p>输入一个格式为 label:key:label:value 的命名空间过滤器</p>
+                <input type="text" placeholder="输入一个格式为 label:key:label:value 的命名空间过滤器">
+            </div>
+        </section>
+        <section id="clustertasks">
+            <h1>Clustertasks</h1>
+            <div class="namespace">
+                <h2>Namespace</h2>
+                <p>输入一个格式为 label:key:label:value 的命名空间过滤器</p>
+                <input type="text" placeholder="输入一个格式为 label:key:label:value 的命名空间过滤器">
+            </div>
+        </section>
+    </main>
+</body>
+</html>
