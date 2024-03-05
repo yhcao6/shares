@@ -1,0 +1,84 @@
+<html>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: grey;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero-image {
+    height: 400px;
+    background-color: red;
+}
+
+.destination {
+    width: 100px;
+    height: 200px;
+    background-color: blue;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: grey;
+    color: #eee;
+}
+</style>
+<body>
+    <header>
+        <h1>Travel Company</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <input type="text" placeholder="Search Destinations">
+    </header>
+    <main>
+        <div class="hero-image"></div>
+        <h2>Some featured destinations</h2>
+        <div class="featured-destinations">
+            <div class="destination"></div>
+            <div class="destination"></div>
+            <div class="destination"></div>
+            <div class="destination"></div>
+            <div class="destination"></div>
+        </div>
+    </main>
+    <footer>
+        <p>We care about your travel experience.</p>
+        <p>Follow us on social media.</p>
+    </footer>
+</body>
+</html>
