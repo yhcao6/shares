@@ -1,0 +1,58 @@
+<html>
+<style>
+body {
+    display: flex;
+}
+
+#sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+}
+
+#main {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+}
+
+.product-image {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+</style>
+<body>
+    <div id="sidebar">
+        <h2>Product Filters</h2>
+        <ul>
+            <li>Color</li>
+            <li>Size</li>
+            <li>Price</li>
+            <li>Category</li>
+        </ul>
+    </div>
+    <div id="main">
+        <div class="product">
+            <h3>Product 1</h3>
+            <p>Our best selling item, perfect for a beginner.</p>
+            <div class="product-image" style="background-color: red;"></div>
+        </div>
+        <div class="product">
+            <h3>Product 2</h3>
+            <p>A high-end product for an experienced user.</p>
+            <div class="product-image" style="background-color: green;"></div>
+        </div>
+        <div class="product">
+            <h3>Product 3</h3>
+            <p>A practical and reliable product for everyday use.</p>
+            <div class="product-image" style="background-color: blue;"></div>
+        </div>
+    </div>
+</body>
+</html>
